@@ -41,10 +41,11 @@
                                                     </label>
                                             </th>
                                             <th class="text-muted">Id</th>
-                                            <th class="text-muted">Phone</th>
+                                            <th class="text-muted">Name</th>
                                             <th class="text-muted">Email</th>
-                                            <th class="text-muted">Address</th>
-                                            
+                                            <th class="text-muted">Service</th>
+                                             <th class="text-muted">Package</th>
+											 <th class="text-muted">Massage</th>
                                             <th class="text-muted">Date</th>
                                             <th class="text-muted">Action</th>
                                          </tr>
@@ -62,15 +63,21 @@
                                                 <div class="avatar-group"><?=$value->id?></div>
                                             </td>
                                             <td>
-                                                <div class="avatar-group"><?=$value->pn?></div>
+                                                <div class="avatar-group"><?=$value->name?></div>
                                             </td>
                                              <td>
-                                                <div class="avatar-group"><?=$value->email?></div>
+                                                <div class="avatar-group"><?=$value->mail?></div>
                                             </td>
                                              <td>
-                                                <div class="avatar-group"><?=$value->addr?></div>
+                                                <div class="avatar-group"><?=$value->serve?></div>
                                             </td>
                                             <td>
+                                                <div class="avatar-group"><?=$value->pack?></div>
+                                            </td>
+											<td>
+                                                <div class="avatar-group"><?=$value->msg?></div>
+                                            </td>
+											<td>
                                                 <div class="avatar-group"><?=$value->datetimes?></div>
                                             </td>
                                             <td>
@@ -81,11 +88,7 @@
                                                                     </i>
                                                          </span></a>
                                                      
-                                                     <a href="<?=  base_url('admin/edit_con')?>?q=<?=$value->id?>"><span class="nav-icon text-info">
-                                                                    <i data-feather="edit-2">
-
-                                                                    </i>
-                                                         </span></a>
+                                                     
                                                  </div>
                                             </td>
                                             
